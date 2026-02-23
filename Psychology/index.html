@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Psk.Barış Kızılboğa</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  
+  <!-- Global Stiller -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Ana ekran Stilleri (en baş alan) -->
+  <link rel="stylesheet" href="css/hero.css">
+  <!-- Menü Stilleri -->
+  <link rel="stylesheet" href="css/menu.css">
+  <!-- Hizmet alanı Stilleri -->
+  <link rel="stylesheet" href="css/hizmet.css">
+  <!-- Test Stilleri -->
+  <link rel="stylesheet" href="css/quiz.css">
+  <!-- Mobile Stilleri -->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Sıkca sorulan Sorular stilleri -->
+  <link rel="stylesheet" href="css/question.css">
+  <!-- footer stilleri -->
+   <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+           <a href="index.html" class="logo">Psk.<span>Barış Kızılboğa</span></a>
+        
+        <ul class="nav-menu">
+            <li><a href="about.html" class="nav-link">Hakkımda</a></li>
+            <li><a href="about.html#certfi" class="nav-link">Eğitimlerim</a></li>
+            <li><a href="#projects" class="nav-link">Medya'da Ben</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="https://wa.me/905346844554?text=merhaba%20size%20www.bariskizilboga.com%20üzerinden%20ulaşıyorum%20ön%20görüşme%20yapabilir%20miyiz." target="_blank" class="contact-btn">Ön Görüşme</a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="hero-container">
+  <div class="hero-bg" ></div>
+
+  <div class="opacity-layer"></div>
+
+  <div class="hero-content">
+    <h1>Psk. Barış Kızılboğa</h1>
+    <p>Kendinizi yorgun, sıkışmış veya çaresiz mi hissediyorsunuz? Geleceğinizi daha sağlıklı, daha güçlü bir “siz”le karşılamak için bugün bir adım atın.
+</p>
+ <a href="https://wa.me/905346844554?text=merhaba%20size%20www.bariskizilboga.com%20üzerinden%20ulaşıyorum%20ön%20görüşme%20yapabilir%20miyiz." target="_blank" class="contact-btn">Ücretsiz ön görüşme</a>
+  </div>
+</section>
+<section class="hizmetler-alani">
+
+  <div class="container">
+
+    <h2 class="bolum-basligi">Danışmanlık Seçenekleri</h2>
+
+    
+
+    <div class="hizmet-grid">
+
+      <div class="hizmet-kart">
+
+        <div class="card-img">
+            <img src="img/facetoface.jpg" alt="facetoface">
+        </div>
+        <div class="card-header">
+            <h3>Yüz yüze Danışmanlık</h3>
+           
+            
+        </div>
+        <div class="card-text">
+             <h4>Görüşme süresi: 50dk</h4>
+        </div>
+        <div class="card-btn">
+
+            <a href="https://wa.me/905346844554?text=merhaba%20bireysel%20terapi%20hakkında%20bilgi%20alabilir%20miyim"
+target="_blank" class="incele-btn">Görüşme Talep Et</a>
+        </div>
+
+      </div>
+       <div class="hizmet-kart">
+
+        <div class="card-img">
+            <img src="img/online.jpg" alt="online">
+        </div>
+        <div class="card-header">
+            <h3>Online Danışmanlık</h3>
+           
+            
+        </div>
+        <div class="card-text">
+             <h4>Görüşme süresi: 50dk</h4>
+        </div>
+        <div class="card-btn">
+
+            <a href="https://wa.me/905346844554?text=merhaba%20bireysel%20terapi%20hakkında%20bilgi%20alabilir%20miyim"
+target="_blank" class="incele-btn">Görüşme Talep Et</a>
+        </div>
+
+      </div>
+      
+       
+
+    </div>
+
+  </div>
+
+</section>
+<section class="test-selection">
+
+        <h2 class="section-title">Size Nasıl Yardımcı Olabiliriz?</h2>
+
+        <div class="test-container">
+
+            <div class="test-grid-track" id="test-track">
+
+                </div>
+
+        </div>
+
+    </section>
+
+    <div id="quiz-overlay" class="quiz-overlay">
+
+        <div class="progress-wrapper">
+
+            <div id="progress-bar" class="progress-bar"></div>
+
+        </div>
+
+        <div class="quiz-content">
+
+            <div id="question-track" class="question-track">
+
+                </div>
+
+        </div>
+
+        <div class="quiz-footer">
+
+            <button id="wp-send-btn" class="finish-btn" style="display: none;" onclick="finishTest()">Sonucu WhatsApp ile Gönder</button>
+
+            <button class="close-btn" onclick="closeQuiz()">Vazgeç</button>
+
+        </div>
+
+    </div>
+    <!-- Sıkca sorulan Sorular (SSS -->
+<div class="index-grid">
+<section class="faq-section">
+    <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+    <div class="faq-container">
+       
+    </div>
+
+    </div>
+</section>
+<div class="map">
+    <div class="mapouter" style="position:relative; text-align:right; width:500px; height:500px;">
+  <div class="gmap_canvas" style="overflow:hidden; background:none!important; width:500px; height:500px;">
+    <iframe width="500px" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?q=Bostanc%C4%B1%20Mah.%20Emin%20Ali%20Pa%C5%9Fa%20Cad.%20No%3A106%20Zerren%2C%20Apt.%20Kat%20%3A10%20D%3A19%2C%2034744%2C%2034000%20Kad%C4%B1k%C3%B6y%2F%C4%B0stanbul&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+  </div>
+</div>
+</div>
+
+</div>
+
+ <footer class="footer" role="contentinfo">
+     <div class="footer-container">
+         <div class="footer-grid">
+             <div class="footer-col">
+                 <h3>Psk. Barış Kızılboğa</h3>
+                 <p>Profesyonel psikolojik danışmanlık ve terapi hizmetleri</p>
+             </div>
+             
+             <div class="footer-col">
+                 <h4>Hızlı Bağlantılar</h4>
+                 <ul class="footer-links">
+                     <li><a href="pages/about.html">Hakkımda</a></li>
+                     <li><a href="#services">Hizmetlerim</a></li>
+                     <li><a href="#faq">S.S.S</a></li>
+                 </ul>
+             </div>
+             
+             <div class="footer-col">
+                 <h4>İletişim</h4>
+                 <ul class="footer-contact">
+                     <li><a href="tel:+905346844554">+90 534 684 45 54</a></li>
+                     <li><a href="https://wa.me/905346844554" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                 </ul>
+             </div>
+         </div>
+         
+         <div class="footer-bottom">
+             <p>&copy; 2026 Psk. Barış Kızılboğa. Tüm hakları saklıdır.</p>
+             <p class="footer-credit">
+                 Website tasarımı: <a href="http://www.hakankarabalta.com" target="_blank" rel="noopener noreferrer">Hakan Karabalta</a>
+             </p>
+         </div>
+     </div>
+ </footer>
+
+
+
+
+  <!-- Project -->
+  <script src="js/Menu.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/question.js">j</script>
+  
+</body>
+</html>

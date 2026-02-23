@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Psk.Barış Kızılboğa</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  
+  <!-- Global Stiller -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Menü Stilleri -->
+  <link rel="stylesheet" href="css/menu.css">
+  <!-- Mobile Stilleri -->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- About stilleri -->
+  <link rel="stylesheet" href="css/about.css">
+  <!-- footer stilleri -->
+   <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+           <a href="index.html" class="logo">Psk.<span>Barış Kızılboğa</span></a>
+        
+        <ul class="nav-menu">
+            <li><a href="about.html" class="nav-link">Hakkımda</a></li>
+            <li><a href="about.html#certfi" class="nav-link">Eğitimlerim</a></li>
+            <li><a href="#projects" class="nav-link">Medya'da Ben</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="https://wa.me/905346844554?text=merhaba%20size%20www.bariskizilboga.com%20üzerinden%20ulaşıyorum%20ön%20görüşme%20yapabilir%20miyiz." target="_blank" class="contact-btn">Ön Görüşme</a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="about-hero">
+    <div class="about-image-container">
+        <div class="image-wrapper">
+            <img src="img/profilephoto.jpeg" alt="Barış Kızılboğa - Psikolog" class="profile-img">
+            <div class="image-bg-shape"></div>
+        </div>
+    </div>
+
+    <div class="about-content">
+      <!-- <span class="subtitle">Yolculuğum ve Yaklaşımım</span>  -->
+        <h1><span class="highlight"> Barış Kızılboğa</span></h1>
+        <p class="title-sub">Psikolog</p>
+        
+        <div class="bio-text">
+            <p>
+                 Psikolog Barış Kızılboğa, İstanbul Arel Üniversitesi Psikoloji bölümünden mezun olmuştur. Mesleki pratiğinde hem Bilişsel Davranışçı Terapi (BDT) hem de Psikodinamik yaklaşımları temel alan bütüncül bir bakış açısı benimsemektedir.
+            </p>
+            <br>
+            <p>
+                Psikomod Akademi ve Meta Terapi gibi çeşitli danışmanlık merkezlerinde edindiği deneyimler, onun hem kuramsal hem de pratik becerilerini derinleştirmiştir. Bu süreçte farklı yaş grupları ve çeşitli ruhsal ihtiyaçlarla çalışan Barış Kızılboğa, aktif olarak bireysel danışanlarla görüşmektedir.
+
+            </p>
+            <br>
+            <p>
+                Güven temelli bir ilişki kurmayı merkeze alan terapi anlayışıyla, danışanlarının duygusal süreçlerini anlamlandırmalarına ve içsel dengeyi yeniden kurmalarına eşlik etmeyi amaçlar. Terapiyi sadece bir müdahale alanı değil, aynı zamanda kişinin kendini keşfetmesine olanak tanıyan bir yolculuk olarak görmektedir.
+
+
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="certificates-section" id="certfi">
+    <div class="container">
+        <h2 class="section-title">Eğitim ve Sertifikalar</h2>
+        <p class="section-subtitle">Mesleki gelişimim için tamamladığım uzmanlık programları</p>
+        
+       <div class="cert-grid">
+    <div class="cert-card" onclick="openCert('img/bdt.jpg')">
+        <div class="cert-icon">
+            <img src="img/bdt.jpg" alt="Sertifika Logosu">
+        </div>
+        <div class="cert-info">
+            <h3>Bilişsel Davranışçı Terapi (BDT)</h3>
+            <p class="issuer">BDT İzmir</p>
+            <span class="cert-date">2024</span>
+        </div>
+    </div>
+
+    <div class="cert-card" onclick="openCert('img/psikodinamik.jpg')">
+        <div class="cert-icon">
+            <img src="img/psikodinamik.jpg" alt="Sertifika Logosu">
+        </div>
+        <div class="cert-info">
+            <h3>Psikodinamik</h3>
+            <p class="issuer">Doğan Şahin</p>
+            <span class="cert-date">2025</span>
+        </div>
+    </div>
+    <div class="cert-card" onclick="openCert('img/psikodinamik1.jpg')">
+        <div class="cert-icon">
+            <img src="img/psikodinamik1.jpg" alt="Sertifika Logosu">
+        </div>
+        <div class="cert-info">
+            <h3>Psikodinamik - 2</h3>
+            <p class="issuer">Doğan Şahin</p>
+            <span class="cert-date">2025</span>
+        </div>
+    </div>
+</div>
+
+<div id="cert-lightbox" class="cert-modal" onclick="closeCert()">
+    <span class="close-lightbox">&times;</span>
+    <img id="modal-img" src="" alt="Sertifika Tam Boyut">
+</div>
+
+                
+            
+        
+    </div>
+</section>
+
+ <footer class="footer" role="contentinfo">
+     <div class="footer-container">
+         <div class="footer-grid">
+             <div class="footer-col">
+                 <h3>Psk. Barış Kızılboğa</h3>
+                 <p>Profesyonel psikolojik danışmanlık ve terapi hizmetleri</p>
+             </div>
+             
+             <div class="footer-col">
+                 <h4>Hızlı Bağlantılar</h4>
+                 <ul class="footer-links">
+                     <li><a href="pages/about.html">Hakkımda</a></li>
+                     <li><a href="#services">Hizmetlerim</a></li>
+                     <li><a href="#faq">S.S.S</a></li>
+                 </ul>
+             </div>
+             
+             <div class="footer-col">
+                 <h4>İletişim</h4>
+                 <ul class="footer-contact">
+                     <li><a href="tel:+905346844554">+90 534 684 45 54</a></li>
+                     <li><a href="https://wa.me/905346844554" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                 </ul>
+             </div>
+         </div>
+         
+         <div class="footer-bottom">
+             <p>&copy; 2026 Psk. Barış Kızılboğa. Tüm hakları saklıdır.</p>
+             <p class="footer-credit">
+                 Website tasarımı: <a href="http://www.hakankarabalta.com" target="_blank" rel="noopener noreferrer">Hakan Karabalta</a>
+             </p>
+         </div>
+     </div>
+ </footer>
+
+
+
+
+ <script src="js/Menu.js"></script>
+ <script src="js/certification.js">js/certification.js</script>
+</body>
+</html>
