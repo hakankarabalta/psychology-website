@@ -1,0 +1,63 @@
+@import url("main.css");
+
+
+/* Ana Kapsayıcı */
+
+.hero-container {
+
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top:80px;
+  grid-template-rows: 1fr;
+  
+  width: 100%;
+  overflow: hidden;
+  height: 50dvh;
+
+}
+
+/* Tüm çocukları aynı noktaya üst üste diz */
+
+.hero-container > * {
+
+  grid-area: 1 / 1;
+  width: 100%;
+  height: 100%;
+
+}
+
+/* Arka Plan Görseli */
+
+.hero-bg {
+
+  background-image: var(--hero-img);
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+/* Karartma Katmanı */
+
+.opacity-layer {
+  
+  background: linear-gradient(340deg, rgba(0, 0, 0, 1), rgba(102, 49, 42, 0.5));
+  z-index: 2;
+
+}
+
+/* İçerik Katmanı (En Üstte) */
+
+.hero-content {
+
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: var(--white);
+  text-align: center;
+  padding: 20px;
+  margin-top:8%;
+  gap:20px;
+
+}
